@@ -1,0 +1,18 @@
+# compute new centroids by averaging with new points cluster counter = 0
+# [clusterl_new_elements_added, cluster2_new_elements_added...] for i in range (len (centroids)): for j in point to cluster mapping: if point_to_cluster_mapping[j] == i:
+centroids[i][0] += datapoints[j] [0] # x-coordinate adding
+centroids[i][1] += datapoints[j] [1] # y-coordinate adding
+cluster counter += 1 if cluster counter != 0:
+centroids[i][0] = round (centroids [i] [0]/cluster_counter, 4)
+centroids[i][1] = round (centroids[i] [1]/cluster_counter, 4)
+cluster_counter = 0
+printResult (centroids, point_to_cluster_mapping)
+return centroids
+def kmeans_iterator (centroids, datapoints):
+old centroids = centroids new centroids = centroids iteration = 0
+while iteration != 15:
+iteration += 1 print("\nIteration ", iteration) old_centroids = new_centroids
+new centroids = kmeansclustering (new centroids, datapoints)
+centroids = [[2,10], [5,8], [1,2]] datapoints = [[2,10], [2,5], [8,4], [7,5], [6,4], [1,2], [4,9]]
+[5,8],
+kmeans_iterator (centroids, datapoints)
